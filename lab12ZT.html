@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Greeting Card</title>
+<meta charset="utf-8">
+<!--My Lab 12 Template | Zariyah Taylor, H02, 11/1/2023-->
+
+<style>
+#day {position:absolute;
+left:700px;
+top:50px;
+width:200px;
+padding:20px;
+text-align:center;}
+
+#day1 {position:absolute;
+left:300px;
+top:100px;
+width:300px;
+padding:20px;
+text-align:center;
+font-size:40pt}
+
+#day2 {position:absolute;
+left:300px;
+top:500px;
+width:300px;
+padding:20px;
+text-align:center;
+font-size:40pt}
+
+#day3 {position:absolute;
+left: 1300px;
+top:250px;
+width:300px;
+padding:20px;
+text-align:center;
+font-size:40pt}
+
+#day1, #day2, #day3 {color:goldenrod; 
+font-family:georgia, serif;
+border: dotted 3px lightsalmon;
+background-color:ivory}
+
+body{background-color:lemonchiffon}
+
+</style>
+
+<script>
+function night(){
+document.getElementById("photo").src="nightphoto.jpg";
+
+document.getElementById("day1").innerHTML="The nights don't feel so lonely with you around!";
+
+document.getElementById("day2").innerHTML="You're the Sun to my Moon.";
+
+document.getElementById("day3").innerHTML="I'm so glad to know you!";
+
+document.getElementById("day1").style.color="indigo";
+document.getElementById("day1").style.borderColor="midnightblue";
+document.getElementById("day1").style.backgroundColor="lavender";
+
+document.getElementById("day2").style.color="indigo";
+document.getElementById("day2").style.borderColor="midnightblue";
+document.getElementById("day2").style.backgroundColor="lavender";
+
+document.getElementById("day3").style.color="indigo";
+document.getElementById("day3").style.borderColor="midnightblue";
+document.getElementById("day3").style.backgroundColor="lavender";
+
+document.getElementById("back").style.backgroundColor="darkslateblue";
+}
+
+</script>
+
+</head>
+
+<body id="back">
+<div id="day">
+<img src="dayphoto.jpg" alt="Sunny Day" width="500" height="600"onmouseover="night()" id="photo">
+</div>
+
+<div id="day1">
+You brighten my day! 
+</div>
+
+<div id="day2">
+I hope I make you feel the same.
+</div>
+
+<div id="day3">
+Thanks for being my friend!
+</div>
+
+</body>
+</html>
